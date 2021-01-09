@@ -1,0 +1,27 @@
+{
+
+    "name": "Listen for XDebug",
+  
+    "type": "php",
+  
+    "request": "launch",
+  
+    "port": 9000,
+  
+    "log": true,
+  
+    "externalConsole": false,
+  
+    "pathMappings": {
+  
+        "/app": "LoginScreen/login.php"
+  
+    },
+  
+    "ignore": [
+  
+        "**/vendor/**/*.php"
+  
+    ]
+  
+  }

@@ -1,0 +1,9 @@
+Create PROCEDURE SP_CHECKLOGIN
+@username VARCHAR,
+@pass VARCHAR
+as
+declare @okval BINARY
+
+select @okval = (select 1 from UserTable where Username = @username and UserPass = @pass)
+
+RETURN @okval
